@@ -25,7 +25,7 @@ Run
 
 ## Usage
 
-`ros2 run usb_camera_driver usb_camera_driver_node __ns:=/<your namespace> __params:=config.yaml`
+`ros2 run usb_camera_driver usb_camera_driver_node __ns:=/<your namespace> --ros-args -p camera_calibration_file:=file:///absolute_path_to_file/camera.yaml`
 
 Available parameters:
 - `frame_id` -> transform frame_id of the camera, defaults to "camera"
