@@ -25,9 +25,9 @@ Run
 
 ## Usage
 
-`ros2 run usb_camera_driver usb_camera_driver_node __ns:=/<your namespace> --ros-args -p camera_calibration_file:=file:///absolute_path_to_file/camera.yaml`
+`ros2 run usb_camera_driver usb_camera_driver_node __ns:=/<your namespace> --ros-args -p camera_calibration_file:=file:///absolute_path_to_file/camera.yaml -p image_height:=480 -p image_width:=640 -p fps:=30.0 -p frame_id:=camera -p camera_id:=2`
 
-Available parameters:
+Configuration file is not read at all for parameters like fps, frame_id and camera_id. These must be passed from command line:
 - `frame_id` -> transform frame_id of the camera, defaults to "camera"
 - `image_width` -> image width (1280 default)
 - `image_height` -> image height (720 default)

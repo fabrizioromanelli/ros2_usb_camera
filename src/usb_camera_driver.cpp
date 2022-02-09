@@ -36,8 +36,8 @@ CameraDriver::CameraDriver(const rclcpp::NodeOptions &node_options) : Node("usb_
 
     frame_id_ = this->declare_parameter("frame_id", "camera");
 
-    image_width_ = this->declare_parameter("image_width", 1280);
-    image_height_ = this->declare_parameter("image_height", 720);
+    image_width_ = this->declare_parameter("image_width", 640);
+    image_height_ = this->declare_parameter("image_height", 480);
     fps_ = this->declare_parameter("fps", 10.0);
 
     camera_id = this->declare_parameter("camera_id", 0);
