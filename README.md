@@ -34,6 +34,8 @@ Configuration file is not read at all for parameters like fps, frame_id and came
 - `fps` -> video fps (10 default)
 - `camera_id` -> id of camera to capture (0 - 100, 0 default)
 
+You can use rviz2 to display the camera frames. Please select as realiability policy "Best effort". As Fixed Frame Global Options, please select "camera".
+
 ### Calibration files
 To use the camera info functionality you need to load a file from the camera_calibration (https://github.com/ros-perception/image_pipeline/tree/ros2/camera_calibration) library and put it in/name it `file:///Users/<youruser>/.ros/camera_info/camera.yaml`
 
